@@ -1,9 +1,0 @@
-/* Add this to your existing CSS file or create a new one */
-
-.card {
-    transition: transform 0.3s;
-}
-
-.card:hover {
-    transform: scale(1.05);
-}
