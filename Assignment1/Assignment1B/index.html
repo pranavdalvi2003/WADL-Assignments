@@ -3,142 +3,27 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>My E-Commerce</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./style.css"> <!-- Add the path to your custom CSS file -->
-    <style>
-        /* Add your custom styles here */
-        .jumbotron {
-            background: url('./hero-background.jpg') center/cover;
-            color: black;
-            font-weight: bolder;
-            text-align: center;
-            padding: 100px 20px;
-            margin-bottom: 30px;
-        }
-
-        body {
-            height: 100%;
-            z-index: -1;
-            overflow-x: hidden;
-        }
-
-        .bg {
-            opacity: 30%;
-            position: absolute;
-            z-index: -1;
-            overflow: hidden;
-        }
-
-        .container {
-            text-align: center;
-            font-weight: bolder;
-        }
-
-        .featured-content {
-            margin: 50px 0;
-        }
-
-        .promotion-banner {
-            background-color: #f8d7da;
-            color: #721c24;
-            padding: 20px;
-            text-align: center;
-            margin-bottom: 30px;
-        }
-
-        .footer {
-            margin-top: auto;
-            position: relative;
-            bottom: 0;
-        }
-
-        .contact-form {
-            max-width: 600px;
-            margin: 0 auto;
-        }
-    </style>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
 </head>
 
 <body>
-    <div class="background">
-        <img src="./bg.jpg" class="bg img-fluid" alt="bg">
-        <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container">
-                <a class="navbar-brand" href="#">My E-Commerce</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="shop.html">Shop</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="login.html">Login</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+    <center style="margin-top: 5rem;">
+        <h1>User Registration</h1>
+        <form id="registrationForm">
+            <input required type="text" id="name" placeholder="Enter Name">
+            <br><br>
+            <input required type="number" maxlength="10" id="phone" placeholder="Enter Mobile Number">
+            <br><br>
+            <input required type="text" id="div" placeholder="Enter Your Division">
+            <br><br>
+            <button id="btn">Submit</button>
+        </form>
+    </center>
 
-        <!-- Hero Section -->
-       
-
-        <!-- Carousel Section -->
-        <div id="offerCarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="promotion-banner">
-                        <h2>Special Offer 1</h2>
-                        <p>Get 20% off on all items this week. Use code: SPECIAL20</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="promotion-banner">
-                        <h2>Special Offer 2</h2>
-                        <p>Another amazing offer. Don't miss out!</p>
-                    </div>
-                </div>
-                <!-- Add more carousel items as needed -->
-            </div>
-            <a class="carousel-control-prev" href="#offerCarousel" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#offerCarousel" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
-        </div>
-        <div class="jumbotron">
-            <h1 class="display-4">Discover Unique Content</h1>
-            <p class="lead">Explore our featured content and stay updated with the latest trends.</p>
-            <a class="btn btn-primary btn-lg" href="shop.html" role="button">Explore Now</a>
-        </div>
-
-    </div>
-
-    <!-- Contact Form Section -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 My E-Commerce. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <!-- Bootstrap JS and jQuery -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="./main.js"></script>
 </body>
 
 </html>

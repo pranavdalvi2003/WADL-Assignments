@@ -5,10 +5,13 @@ function DisplayData() {
         <thead>
             <tr>
                 <th>
-                    Username
+                    Name
                 </th>
                 <th>
-                    Password
+                    Phone-Number
+                </th>
+                <th>
+                    Division
                 </th>
             </tr>
         </thead>
@@ -17,8 +20,9 @@ function DisplayData() {
     users.forEach(element => {
         html += `
             <tr>
-                <td>${element?.username}</td>
-                <td>${element?.password}</td>
+                <td>${element?.name}</td>
+                <td>${element?.phone}</td>
+                <td>${element?.div || "11"}</td>
             </tr>
         `
     })
@@ -36,15 +40,16 @@ function addAndDisplayData(data) {
     DisplayData();
 }
 
-document.forms.registrationForm.addEventListener("Login", formSubmit)
+document.forms.registrationForm.addEventListener("submit", formSubmit)
 
 function formSubmit(event) {
     event.preventDefault();
 
-    let username = document.getElementById('username').value;
-    let password = document.getElementById('password').value;
+    let name = document.getElementById('name').value;
+    let phone = document.getElementById('phone').value;
+    let div = document.getElementById('div').value;
 
-    let postObj = { username, password };
+    let postObj = { name, phone, div };
 
     $.ajax({
         type: 'POST',
