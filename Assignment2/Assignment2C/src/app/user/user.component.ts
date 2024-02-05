@@ -13,12 +13,8 @@ export class UserComponent implements OnInit {
   password = '';
 
   userList = [{
-    name:"Shivendra",
+    name:"Pranav",
     pass:"123"
-  },
-   {
-     name:"Shiv",
-    pass:"345"
   }];
 
   handleAdd = () => {
